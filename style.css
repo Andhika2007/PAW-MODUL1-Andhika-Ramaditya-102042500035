@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #20232d;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* NAVBAR */
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #3f51b5;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #3f51b5;
+}
+
+.hero {
+    margin-top: 35px;
+}
+
+.hero .container {
+    background: linear-gradient(
+        135deg,
+        #3f51b5,
+        #6573d6
+    );
+
+    color: white;
+
+    padding: 55px;
+
+    border-radius: 18px;
+}
+
+.hero p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #e8eaff;
+    max-width: 500px;
+}
+
+.hero a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 18px;
+
+    background-color: white;
+    color: #3f51b5;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* LIST BARANG */
+
+.catalog {
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+
+.catalog-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.catalog-header small,
+.about small {
+    color: #3f51b5;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.catalog-header h2 {
+    font-size: 26px;
+}
+
+.total {
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    padding: 9px 14px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+}
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    border: 1px solid #e1e1e1;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-image {
+    height: 200px;
+
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.diskon {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background-color: #3f51b5;
+
+    color: white;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content small {
+    color: #888;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+}
+
+.card-content h3 {
+    font-size: 17px;
+
+    margin: 4px 0 10px;
+}
+
+
+.harga-lama {
+    color: #999;
+
+    font-size: 11px;
+
+    text-decoration: line-through;
+}
+
+.harga {
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.stock {
+    border-top: 1px solid #eee;
+
+    padding-top: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 12px;
+}
+
+.tersedia {
+    color: #16803c;
+
+    background-color: #e2f6e9;
+
+    padding: 4px 8px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+}
+
+.habis {
+    color: #c52b2b;
+
+    background-color: #ffe4e4;
+
+    padding: 4px 8px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+}
+
+
+.card button {
+    width: 100%;
+
+    margin-top: 14px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #20232d;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.card button:hover {
+    background-color: #3f51b5;
+}
+
+
+/* ABOUT */
+.about {
+    background-color: white;
+
+    padding: 60px 0;
+}
+
+.about h2 {
+    margin: 5px 0 10px;
+}
+
+.about p {
+    max-width: 600px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #20232d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 12px;
+}
